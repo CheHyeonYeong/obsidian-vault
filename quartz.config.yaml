@@ -105,8 +105,21 @@ plugins:
     enabled: true
   - source: github:quartz-community/content-page
     enabled: true
+  - source: github:quartz-community/explorer
+    enabled: true
+    layout:
+      position: left
+      priority: 50
+    options:
+      title: 기술노트
+      folderClickBehavior: link
+      folderDefaultState: collapsed
+      useSavedState: true
   - source: github:quartz-community/graph
     enabled: true
+    layout:
+      position: right
+      priority: 10
     options:
       localGraph:
         drag: true
